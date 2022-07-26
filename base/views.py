@@ -12,5 +12,5 @@ rooms = [
 def home(request):
     return render(request, 'base/home.html', {'rooms': rooms}) 
     
-def room(request):
+def room(request, pk):
     return render(request, 'room.html')
